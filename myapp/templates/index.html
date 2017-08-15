@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h4> {{ today }} </h4>
+    <meta charset="UTF-8">
+    <title>Instagram Clone</title>
+    <style>
+        body{
+            background-image: url(" http://i.imgur.com/b80F3zI.jpg ");
+        }
+    </style>
+</head>
+<body style="text-align: center">
+	<div class="main">
+            <h1> Instagram Clone</h1>
+            <h3>Sign Up</h3>
+    </div>
+
+    <div>
+        <form method="post">
+
+             {% csrf_token %}
+            <div>
+                <label for="username">Username: </label>
+                <input id="username" type="text" name="username" value={{ username }}>
+            </div>
+
+            <div>
+                <label for="name">Name: </label>
+                <input id="name" type="text" name="name" value={{ name }}>
+            </div>
+
+            <div>
+                <label for="email">Email: </label>
+                <input id="email" type="text" name="email" value={{ email }}>
+            </div>
+
+            <div>
+                <label for="password">Password: </label>
+                <input id="password" type="password" name="password" value={{ password }}>
+            </div>
+                <input type="submit" value="Sign Up">
+        </form>
+
+
+
+    </div><br><br>
+
+    <div><h3>Already a user?<a href="login/"><br>Login</a></h3> </div>
+</body>
+</html>

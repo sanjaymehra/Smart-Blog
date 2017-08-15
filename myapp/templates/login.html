@@ -1,0 +1,26 @@
+<div style="text-align: center;">
+    <style>
+         body{
+            background-image: url(" http://i.imgur.com/b80F3zI.jpg ");
+        }
+    </style>
+    <form method="post">
+    {% csrf_token %}
+      <div>
+          <h3> InstaClone Login </h3>
+          <img src="http://i.imgur.com/F4cFNdJ.png" alt="some_text" style="width:25%;height:50%;">
+          <br>
+          <h3><label for="username">Username: </label></h3>
+          <input id="username" type="text" name="username" value={{ username }}>
+      </div>
+
+      <div>
+          <h3><label for="password">Password: </label></h3>
+          <input id="password" type="password" name="password" value={{ password }}>
+      </div>
+
+      <input type="submit" value="Log In">
+
+    </form>
+
+    </div>
